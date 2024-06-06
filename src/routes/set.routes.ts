@@ -5,7 +5,7 @@ import {
   deleteSetById,
   fetchAllSets,
   fetchSetById,
-} from "../controllers/set.controller";
+} from "../controllers/set.controller.js";
 
 const setRouter = express.Router();
 

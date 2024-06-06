@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
-import User from "../models/User.model";
-import Flashcard from "../models/Flashcard.model";
-import FlashcardSet from "../models/FlashcardSet.model";
-import Collecetion from "../models/Collection.model";
+import User from "../models/User.model.js";
+import Flashcard from "../models/Flashcard.model.js";
+import FlashcardSet from "../models/FlashcardSet.model.js";
+import Collecetion from "../models/Collection.model.js";
 
 import { Request, Response } from "express";
 

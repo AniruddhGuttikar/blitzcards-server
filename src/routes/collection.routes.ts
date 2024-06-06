@@ -6,7 +6,7 @@ import {
   createCollection,
   deleteCollectionById,
   updateCollectionById,
-} from "../controllers/collection.controller";
+} from "../controllers/collection.controller.js";
 
 const collectionRouter = Router();
 

@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
-import connectDB from "./config/db.config";
+import connectDB from "./config/db.config.js";
 
-import routes from "./routes/routes";
+import routes from "./routes/routes.js";
 const PORT = parseInt(process.env.PORT || "8000");
 
 const app = express();
