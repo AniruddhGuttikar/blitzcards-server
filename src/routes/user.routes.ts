@@ -1,4 +1,4 @@
-import { Router } from "express";
+import { Router, Request, Response } from "express";
 
 import {
   createUser,
@@ -11,6 +11,9 @@ const userRouter = Router();
 
 userRouter.get("/:id", fetchUserById);
 userRouter.post("/", createUser);
+userRouter.get("/", (req: Request, res: Response) => {
+  res.send("okay working");
+});
 userRouter.delete("/:id", deleteUserById);
 userRouter.patch("/:id", updateUserById);
 

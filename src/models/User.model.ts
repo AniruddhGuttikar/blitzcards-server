@@ -3,6 +3,7 @@ import mongoose, { Schema } from "mongoose";
 export interface IUser {
   username: String;
   email: String;
+  password: String;
   createdAt: Date;
   collections: mongoose.Types.ObjectId[];
 }
@@ -13,6 +14,10 @@ const userSchema = new Schema<IUser>({
     required: true,
   },
   email: {
+    type: String,
+    required: true,
+  },
+  password: {
     type: String,
     required: true,
   },
