@@ -12,7 +12,7 @@ const userRouter = Router();
 userRouter.get("/:id", fetchUserById);
 userRouter.post("/", createUser);
 userRouter.get("/", (req: Request, res: Response) => {
-  res.send("okay working");
+  res.send("okay working fine");
 });
 userRouter.delete("/:id", deleteUserById);
 userRouter.patch("/:id", updateUserById);
